@@ -4,6 +4,7 @@ serverless-main.zip
 # Local .terraform directories
 **/.terraform/*
 .idea
+.DS_Store
 
 # .tfstate files
 *.tfstate
