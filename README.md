@@ -1,7 +1,7 @@
 # infra-jenkins
 
 ![CI workflow]
-(https://github.com/cyse7125-su24-team10/infra-jenkins/blob/main/.github/workflows/validate.yml)
+(https://github.com/cyse7125-su24-team10/infra-jenkins/blob/main/.github/workflows/validate.yml/badge.svg)
 
 ## Introduction
 IaaC Terraform AWS Infrastructure.
