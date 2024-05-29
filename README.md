@@ -1,7 +1,8 @@
 # infra-jenkins
 
-![CI workflow]
-(https://github.com/cyse7125-su24-team10/infra-jenkins/blob/main/.github/workflows/validate.yml/badge.svg)
+[![Terraform](https://img.shields.io/badge/Terraform-844FBA.svg?style=for-the-badge&logo=Terraform&logoColor=white)](https://www.terraform.io/) [![Amazon Web Services](https://img.shields.io/badge/Amazon%20Web%20Services-232F3E.svg?style=for-the-badge&logo=Amazon-Web-Services&logoColor=white)](https://aws.amazon.com/)
+
+
 
 ## Introduction
 IaaC Terraform AWS Infrastructure.
