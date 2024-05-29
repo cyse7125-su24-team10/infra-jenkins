@@ -11,10 +11,16 @@ variable ingress_protocol {}
 variable ingress_protocol_cidr_block {
     type = list(string)
 }
+variable egress_protocol_cidr_block {
+    type = list(string)
+}
+variable egress_protocol {}
 variable port_http {}
 variable port_ssl {}
 variable ami_jenkins {}
 variable ec2_instance_type {}
+variable egress_from_port {}
+variable egress_to_port {}
 variable jenkins_elastic_ip {
     type = list(string)
 }
