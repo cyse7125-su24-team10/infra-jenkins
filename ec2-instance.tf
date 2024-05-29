@@ -5,16 +5,12 @@ resource "aws_instance" "jenkins_server" {
   vpc_security_group_ids = [aws_security_group.jenkins_sg.id]
   subnet_id = aws_subnet.jenkins_public_subnet.id
   associate_public_ip_address = true
-  tags= {
-    Name=var.ec2_instance_tagname
-    
-  }
   user_data = <<-EOF
     #!/bin/bash
-    sudo snap install --classic certbot
-    sudo ln -s /snap/bin/certbot /usr/bin/certbot
-
-    sudo certbot --nginx --non-interactive --agree-tos -m jenkins@skynetx.me -d jenkins.skynetx.me  --test-cert
+    sudo certbot --nginx -d jenkins.skynetx.me --agree-tos --register-unsafely-without-email --noninteractive --test-cert
     EOF
+  tags= {
+    Name=var.ec2_instance_tagname 
+  }
 }
 
