@@ -7,7 +7,7 @@ resource "aws_instance" "jenkins_server" {
   associate_public_ip_address = true
   user_data = <<-EOF
     #!/bin/bash
-    sudo certbot --nginx -d jenkins.skynetx.me --agree-tos --register-unsafely-without-email --noninteractive --test-cert
+    sudo certbot --nginx -d jenkins.skynetx.me --agree-tos --register-unsafely-without-email --noninteractive
     EOF
   tags= {
     Name=var.ec2_instance_tagname 
