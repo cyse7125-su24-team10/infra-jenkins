@@ -12,5 +12,10 @@ resource "aws_instance" "jenkins_server" {
   tags= {
     Name=var.ec2_instance_tagname 
   }
+
+  root_block_device {
+    volume_size = var.root_volume_size
+    volume_type = var.root_volume_type
+  }
 }
 

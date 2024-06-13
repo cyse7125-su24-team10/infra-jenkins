@@ -26,3 +26,10 @@ variable jenkins_elastic_ip {
 }
 variable jenkins_eip_name {}
 variable ec2_instance_tagname {}
+variable "root_volume_size" {
+  type = number
+}
+
+variable "root_volume_type" {
+  type = string
+}
